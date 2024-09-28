@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e3e3e3;
+    text-align: center;
+}
+
+header {
+    background-color: #04126c;
+    color: white;
+    padding: 1em 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.photo {
+    margin-bottom: 20px;
+}
+
+.profile-photo {
+    max-width: 400px;
+    border-radius: 50%;
+}
+
+/* Adjust for mobile screens */
+@media (max-width: 768px) {
+    .profile-photo {
+        max-width: 250px; /* Smaller profile picture on mobile */
+    }
+}
+
+.intro {
+    margin-bottom: 20px;
+    padding: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333;
+    max-width: 900px; /* Limit the width of the intro on larger screens */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Adjust font size for smaller screens */
+@media (max-width: 768px) {
+    .intro {
+        font-size: 1em; /* Smaller font for mobile */
+        padding: 10px;
+    }
+}
+
+/* Link styles */
+a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: normal;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 1px solid transparent;
+}
+
+.cognizant {
+    color: #04126c;
+    border-bottom: 1px solid #04126c;
+}
+
+/* Links section */
+.links {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* Icon container styles */
+.icon-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.icon-wrapper {
+    position: relative;
+}
+
+.icon-linkedin, .icon-resume, .icon-github, .icon-realtreks {
+    text-decoration: none;
+    font-size: 2em;
+    transition: color 0.3s;
+}
+
+.icon-linkedin {
+    color: #0077B5;
+}
+
+.icon-resume {
+    color: #ED2224;
+}
+
+.icon-github {
+    color: #1B1F24;
+}
+
+.icon-realtreks {
+    color: rgb(11, 109, 34);
+}
+
+/* Mobile layout for icons */
+@media (max-width: 768px) {
+    .icon-container {
+        flex-direction: column; /* Stack icons vertically on mobile */
+    }
+
+    .icon-wrapper {
+        margin-bottom: 10px; /* Add space between icons on mobile */
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #04126c;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Hover text */
+.hover-text {
+    display: none;
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+.icon-linkedin:hover ~ #hover-text {
+    display: block;
+    color: #0077B5;
+    content: "Connect with me on LinkedIn!";
+}
+
+.icon-resume:hover ~ #hover-text {
+    display: block;
+    color: #ED2224;
+    content: "View my resume!";
+}
+
+.icon-github:hover ~ #hover-text {
+    display: block;
+    color: #1B1F24;
+    content: "Check out my GitHub!";
+}
+
+.icon-realtreks:hover ~ #hover-text {
+    display: block;
+    color: rgb(11, 109, 34);
+    content: "Visit my hiking blog!";
+}
